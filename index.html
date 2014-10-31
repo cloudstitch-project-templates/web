@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://cloudstitch.io/release/cloudstitch.js" app="projecttemplates/web"></script>
+    <link type="cloudstitch/gsheet" href="http://cloudstitch.io/projecttemplates/web/datasource/sheet" />
+  </head>
+  <body>
+    
+    <h1>Todos</h1>
+    <ul connect="rows">
+      <li>
+        <input type="checkbox" connect="col(finished)" />
+        <span connect="col(task)">Task Name</span>
+      </li>
+    </ul>
+
+    <form connect="rows">
+      <input connect="col(task)" />
+      <button type="submit">Add</button>
+    </form>
+
+  </body>
+</html>
